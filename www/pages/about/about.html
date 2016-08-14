@@ -1,10 +1,35 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content padding class="about">
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        About
+      </ion-title>
+    </ion-navbar>
+</ion-header>
+
 </ion-content>
+
+<div class="my-ion-slides">
+<ion-slides >
+  <ion-slide style="background-color: green" class="my-swiper-slide-1">
+
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{item.title}}
+        </ion-item>
+      </ion-list> 
+
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: red">
+    <h2>Slide 3</h2>
+  </ion-slide>
+
+</ion-slides>
+</div>
