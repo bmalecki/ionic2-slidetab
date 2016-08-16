@@ -1,20 +1,21 @@
-<ion-toolbar>
-    <ion-segment [(ngModel)]="currState" (ionChange)="onSegmentUpdate($event)">
-        <ion-segment-button value="0">
-        Home
-        </ion-segment-button>
-        <ion-segment-button value="1">
-        Story
-        </ion-segment-button>
-        <ion-segment-button value="2">
-        Profile
-        </ion-segment-button>
-    </ion-segment>
-</ion-toolbar>
-<ion-content>
-    <ion-slides #MainSlider (ionWillChange)="onTabUpdate($event)">
-         <ion-slide>
+
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="currState" (ionChange)="onSegmentUpdate($event)">
+            <ion-segment-button value="0">
+            Home
+            </ion-segment-button>
+            <ion-segment-button value="1">
+            Story
+            </ion-segment-button>
+            <ion-segment-button value="2">
+            Profile
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+    <ion-slides #MainSlider id="content-slide" (ionWillChange)="onTabUpdate($event)">
+         <ion-slide class="fdsf">
           <h1>Slide 1</h1>
+          <p>sgjdfgmnBsatek j df asmmklfnd dsjklerlk jfdjkkjn n ndfk.jsb nksmnbjk gnmfnd.vngs ,nbfzljkfdhaoiu;he rlhb,nmekj gnber elh mnebgehsb ghebvrehlkjreb hg</p>
         </ion-slide>
         <ion-slide>
           <h1>Slide 2</h1>
@@ -23,4 +24,3 @@
           <h1>Slide 3</h1>
         </ion-slide>
     </ion-slides>
-</ion-content>

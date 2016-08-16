@@ -1,7 +1,19 @@
-.main-slides{
-    position: fixed;
-    bottom: 50;
-    right: 40;
-    width: 30px;
-    border: 3px solid #73AD21;
+#content-slide{
+    background-color: #fff;
+
+    .swiper-slide {
+        text-align: left !important;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .slide-zoom{
+        margin-top: -10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: left;
+    }
 }
+
